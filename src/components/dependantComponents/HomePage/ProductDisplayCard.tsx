@@ -4,18 +4,16 @@ import zx9_mobile from "../../../assets/home/mobile/image-speaker-zx9.png";
 import zx9_tablet from "../../../assets/home/tablet/image-speaker-zx9.png";
 import zx9_desktop from "../../../assets/home/desktop/image-speaker-zx9.png";
 
-import zx7_mobile from "../../../assets/home/mobile/image-speaker-zx7.png";
-import zx7_tablet from "../../../assets/home/tablet/image-speaker-zx7.png";
-import zx7_desktop from "../../../assets/home/desktop/image-speaker-zx7.png";
+// import zx7_mobile from "../../../assets/home/mobile/image-speaker-zx7.png";
+// import zx7_tablet from "../../../assets/home/tablet/image-speaker-zx7.png";
+// import zx7_desktop from "../../../assets/home/desktop/image-speaker-zx7.png";
 
-import yx1_mobile from "../../../assets/home/mobile/image-earphones-yx1.jpg";
-import yx1_tablet from "../../../assets/home/tablet/image-earphones-yx1.jpg";
-import yx1_desktop from "../../../assets/home/desktop/image-earphones-yx1.jpg";
+// import yx1_mobile from "../../../assets/home/mobile/image-earphones-yx1.jpg";
+// import yx1_tablet from "../../../assets/home/tablet/image-earphones-yx1.jpg";
+// import yx1_desktop from "../../../assets/home/desktop/image-earphones-yx1.jpg";
 import { useStore } from "../../../store";
 
 import decorationImage from "../../../assets/home/desktop/pattern-circles.svg";
-
-import { useEffect } from "react";
 
 const ProductDisplayCard = () => {
   const { currentBreakpoint } = useStore();
