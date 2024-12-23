@@ -1,0 +1,4 @@
+check the font-size on the productAddToCart heading. It should be 40/28/28 (not 40/40/28)
+on individual product pages 'new product' is only on some of the products
+
+go back and make sure all the button/links are providing the correct navigation 

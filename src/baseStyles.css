@@ -1,0 +1,144 @@
+:root {
+  /* fonts */
+  --txt-pri: #000000;
+  --txt-sec: #ffffff;
+  --txt-accent: #d87d4a;
+  --txt-pri-faded: #00000080;
+  --txt-sec-faded: #ffffff80;
+  --txt-sec-less-faded: hsla(0, 0%, 100%, 0.75);
+
+  /* design colours */
+  --clr-dark: #121212;
+  --clr-dark-faded: #4c4c4c;
+  --clr-light: #ffffff;
+  --clr-accent: #d87d4a;
+  --clr-accent-hover: #fbaf85;
+  --clr-faded: #cfcfcf;
+  --clr-faded-background: #f1f1f1;
+  --clr-modal-overlay: #00000080;
+  --clr-hr: hsla(0, 0%, 100%, 0.1);
+  --clr-hero-bg: #191919;
+
+  /* sizes */
+  --max-card-width-0p: 69.375rem;
+  --max-card-width-8p: 70.375rem;
+  --max-card-width-16p: 71.375rem;
+  --max-card-width-24p: 72.375rem;
+  --max-card-width-32p: 73.375rem;
+  --max-card-width-40p: 74.375rem;
+  --max-card-width-48p: 75.375rem;
+}
+
+/* typography */
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+}
+.heading-lrg-40-40-28 {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.3px;
+  font-size: 2.5rem;
+}
+.heading-lrg-40-28-28 {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.3px;
+  font-size: 2.5rem;
+}
+.heading-md {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  font-size: 2rem;
+}
+.heading-sm {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-size: 1.75rem;
+}
+.sub-heading {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2;
+  font-size: 1.5rem;
+}
+.paragraph-lrg {
+  font-weight: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 1.125rem;
+}
+.paragraph-normal {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 0.9375rem;
+}
+.paragraph-xsmall {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}
+.paragraph-small {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+}
+.link-and-btn-text {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 44em) {
+  .heading-lrg-40-40-28 {
+    letter-spacing: 1.4px;
+  }
+  .heading-lrg-40-28-28 {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    font-size: 1.75rem;
+  }
+  .heading-md {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 66em) {
+  .title {
+    letter-spacing: 1.3px;
+    font-size: 2.4rem;
+  }
+  .heading-lrg-40-40-28 {
+    letter-spacing: 1px;
+    font-size: 1.75rem;
+  }
+  .heading-lrg-40-28-28 {
+    letter-spacing: 1px;
+    font-size: 1.75rem;
+  }
+  .heading-md {
+    font-size: 1.5rem;
+  }
+}

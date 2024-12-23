@@ -1,0 +1,18 @@
+.home-screen-component {
+  > .container {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 7.5rem;
+  }
+
+  @media (min-width: 42em) {
+    > .container {
+      gap: 6rem;
+    }
+  }
+  @media (min-width: 66em) {
+    > .container {
+      gap: 12.5rem;
+    }
+  }
+}

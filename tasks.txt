@@ -1,0 +1,110 @@
+SETTING UP DEFAULT STYLING
+    INCOMPLETE: 
+    font [
+        colors: [
+            --txt-pri: #000000;
+            --txt-sec: #FFFFFF;
+            --txt-accent: #D87D4A;
+            --txt-pri-faded:#00000080;
+            --txt-sec-faded:#FFFFFF80;
+        ]
+        family: Manrope
+        size, weight, spacing, lineheight [
+            title:      [ 56/16rem, 700, 2px, 1 or by eye]
+            title:      [ 56/16rem, 700, 2px, 1 or by eye]
+            title:      [ 36/16rem, 700, 1.3px, 1 or by eye]
+           
+            heading-lrg-40-40-28:    [ 40/16rem, 700, 1.3px, 1 or by eye]
+            heading-lrg-40-40-28:    [ 40/16rem, 700, 1.4px, 1 or by eye]
+            heading-lrg-40-40-28:    [ 28/16rem, 700, 1px, 1 or by eye]
+
+            heading-lrg-40-28-28:    [ 40/16rem, 700, 1.3px, 1 or by eye]
+            heading-lrg-40-28-28:    [ 28/16rem, 700, 1.4px, 1 or by eye]
+            heading-lrg-40-28-28:    [ 28/16rem, 700, 1px, 1 or by eye]
+            
+            heading-md:    [ 32/16rem, 700, 1.1px, 1 or by eye]
+            heading-md:    [ 32/16rem, 700, 1.1pxpx, 1 or by eye]
+            heading-md:    [ 24/16rem, 700, 1.1pxpx, 1 or by eye]
+
+            heading-sm:    [ 28/16rem, 700, 2px, 1 or by eye]
+            heading-sm:    [ 28/16rem, 700, 2px, 1 or by eye]
+            heading-sm:    [ 28/16rem, 700, 2px, 1 or by eye]
+
+            sub-heading:    [ 24/16rem, 700, 2px, 1 or by eye]
+            sub-heading:    [ 24/16rem, 700, 2px, 1 or by eye]
+            sub-heading:    [ 24/16rem, 700, 2px, 1 or by eye]
+         
+           
+
+            paragraph: 15px;
+            paragraph-12: 12px;
+            paragraph-13: 13px;
+            paragraph-14: 14px;
+            paragraph-18: 18px;
+
+            button & text links: 13px
+        ]
+    ]
+    colours [
+        --clr-dark: #121212;
+        --clr-light: #ffffff;
+        --clr-accent: #D87D4A;
+        --clr-accent-hover: #FBAF85;
+        --clr-faded: #CFCFCF;
+        --clr-modal-overlay: #00000080;
+    ]
+    responsive sizes: [
+        *large/md/sm
+        --rs-200-96-120: 
+        --rs-120-96-80:
+        --rs-48-32-24:
+        --rs-40-40-24;
+    ]
+
+REACT SCREENS
+    INCOMPLETE: Screens = [
+        Home
+        ProductCategory pages: [headphones, earphones, speakers]
+        Product pages: [headphones, earphones, speakers]
+        Checkout
+    ]
+    
+REACT COMPONENTS & MODALS:
+    SHARED: [
+        navbars
+        navbarDropdown [mobile/tablet]
+        productCategory card
+        productPreview card
+        aboutAudiophile card
+        footer
+    ]
+    DEPENDANT: Screens = [
+        Home page: [
+            hero
+            productDisplay cards
+        ]
+        ProductCategory pages: [
+            hero (headphones, speakers, earphones)
+        ]
+        Product pages: [
+            productAddToCart card
+            productFeatures card
+            productImages card
+            relatedProducts card
+        ]
+        Checkout page: [
+            checkout card
+            summary card
+        ]
+    ]
+    MODALS: [
+        cart [any screen]
+        purchaseConfirmation [checkout screen]
+        navbarDropdown [mobile/tablet modes only]
+    ]
+
+CART FUCNTIONALITY
+    INCOMPLETE: Implement zustand for state management
+
+IMPORT DATA
+    IMCOMPLETE:
