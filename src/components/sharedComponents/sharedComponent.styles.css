@@ -105,6 +105,7 @@
       left: 0;
       right: 0;
     }
+
     #menu-dropdown.show-modal {
       max-height: 46.875rem;
     }
@@ -112,12 +113,14 @@
     @media (min-width: 42em) {
       #menu-dropdown.show-modal {
         max-height: 21.875rem;
+        padding: 5.78125rem 0;
       }
     }
 
     @media (min-width: 66em) {
       #menu-dropdown.show-modal {
         max-height: 0;
+        padding: 0;
       }
     }
 
@@ -326,7 +329,7 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    padding-inline: 1rem;
+    padding-inline: 1.5rem;
 
     .spacer:first-of-type {
       height: 1rem;
@@ -363,9 +366,10 @@
   @media (min-width: 42em) {
     .container {
       flex-direction: row;
-      padding: 6.75rem 1rem 4rem;
+      /* padding: 6.75rem 1rem 4rem; */
+      padding-inline: 2.5rem;
       gap: 0.75rem;
-      max-width: 45.0625rem;
+      /* max-width: 45.0625rem; */
       margin-inline: auto;
 
       .spacer {
@@ -373,7 +377,7 @@
       }
 
       .card {
-        max-width: 14rem;
+        max-width: 33%;
       }
     }
   }
@@ -485,4 +489,80 @@
 .accent-button-component:hover,
 .accent-button-component:focus {
   background-position: right;
+}
+
+.about-audiophile-component {
+  .container {
+    max-width: var(--max-card-width-40p);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+
+      .title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+
+        span {
+          color: var(--clr-accent);
+        }
+      }
+
+      .description {
+        font-weight: 500;
+        color: var(--txt-pri-faded);
+      }
+    }
+
+    .image-container {
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 18.75rem;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 42em) {
+    .container {
+      padding-inline: 2.5rem;
+      gap: 4rem;
+
+      .content-container {
+        .title {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 66em) {
+    .container {
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 8rem;
+      height: 36.75rem;
+
+      .content-container {
+        width: 50%;
+        text-align: left;
+        .description {
+          max-width: 48ch;
+        }
+      }
+      .image-container {
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@ import Footer from "./components/sharedComponents/Footer";
 import { useEffect } from "react";
 
 function App() {
-  const { setBreakpoint } = useStore();
+  const { scrollToTop, setBreakpoint } = useStore();
 
   function handleBreakpoint() {
     const screenWidth_RemUnits = window.innerWidth / 16;
@@ -20,13 +20,14 @@ function App() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     handleBreakpoint();
     window.addEventListener("resize", handleBreakpoint);
 
     return () => {
       window.removeEventListener("resize", handleBreakpoint);
     };
-  }, []);
+  }, [scrollToTop]);
   return (
     <div className="App-component">
       <Navbar />

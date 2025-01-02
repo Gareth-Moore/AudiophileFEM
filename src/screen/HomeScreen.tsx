@@ -6,11 +6,12 @@ import AboutAudiophileCard from "../components/sharedComponents/AboutAudiophileC
 const HomeScreen = () => {
   return (
     <div className="home-screen-component">
-      <div className="container">
+      <div className="container" style={{ overflow: "hidden" }}>
         <Hero />
-        <ProductCategoryCard />
+        <ProductCategoryCard removeLastSpacer={true} />
         <ProductDisplayCard />
         <AboutAudiophileCard />
+        <div className="spacer"></div>
       </div>
     </div>
   );

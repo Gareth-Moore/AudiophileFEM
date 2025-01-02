@@ -71,7 +71,7 @@ const Navbar = () => {
 
         {/* DROPDOWN AND MODALS */}
         <div id="menu-dropdown" className={isMenuOpen ? "show-modal" : ""}>
-          <ProductCategoryCard />
+          <ProductCategoryCard closeNavbar={() => toggleDropdownMenu(false)} />
         </div>
 
         <div id="modal" className={isModalOpen ? "show-modal" : ""}>

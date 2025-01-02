@@ -2,3 +2,6 @@ check the font-size on the productAddToCart heading. It should be 40/28/28 (not 
 on individual product pages 'new product' is only on some of the products
 
 go back and make sure all the button/links are providing the correct navigation 
+add scroll to top functionality when navigating in the same page (i.e. changing from 'headphones' to 'speakers')
+
+pay more attention to HTML semantics. For example each page uses div's and there are no articles or sections. 

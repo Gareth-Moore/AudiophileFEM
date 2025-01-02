@@ -93,6 +93,7 @@
       max-width: var(--max-card-width-24p);
       margin-inline: auto;
 
+      .title,
       .description {
         text-align: left;
       }
@@ -103,10 +104,19 @@
 .product-display-component {
   .container {
     display: grid;
+    margin-inline: auto;
     grid-template-rows: auto;
     gap: 1.5rem;
     border-radius: 0.5rem;
     padding-inline: 1.5rem;
+
+    .card {
+      width: 100%;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      max-width: var(--max-card-width-0p);
+      margin-inline: auto;
+    }
 
     .card-zx9 {
       background-color: var(--clr-accent);
@@ -118,24 +128,34 @@
       text-align: center;
       gap: 1.5rem;
       position: relative;
+      overflow: hidden;
 
-      .title {
-        margin-top: 0.5rem;
-        line-height: 1.3;
-        color: var(--txt-sec);
-        font-size: 2.25rem;
-      }
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 1;
 
-      .description {
-        color: var(--txt-sec-less-faded);
-        max-width: 28ch;
+        .title {
+          margin-top: 0.5rem;
+          line-height: 1.3;
+          color: var(--txt-sec);
+          font-size: 2.25rem;
+        }
+
+        .description {
+          color: var(--txt-sec-less-faded);
+          max-width: 28ch;
+        }
       }
 
       .image-container {
-        width: fit-content;
         width: 10.75rem;
         position: relative;
         overflow: visible;
+        z-index: 0;
 
         .image-decoration {
           position: absolute;
@@ -149,9 +169,47 @@
     }
     .card-zx7 {
       height: 20rem;
+      background-position: center;
+      background-size: cover;
+      padding-left: 1.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: start;
+      gap: 2rem;
+      .title {
+        font-size: 1.75rem;
+      }
     }
     .card-yx1 {
       height: 26.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .content-container {
+        background-color: var(--clr-faded-background);
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 1.5rem;
+        gap: 2rem;
+        height: 12.5rem;
+      }
+
+      .title {
+        font-size: 1.75rem;
+      }
+
+      .image-container {
+        border-radius: 0.5rem;
+        height: 12.5rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
@@ -164,17 +222,30 @@
         height: 45rem;
 
         .image-container {
+          width: 12.3125rem;
+          position: relative;
           .image-decoration {
           }
           .image-product {
-            width: 12.3125rem;
           }
         }
       }
       .card-zx7 {
+        padding-left: 4rem;
       }
       .card-yx1 {
         height: 20rem;
+        flex-direction: row;
+
+        .content-container {
+          padding-left: 2.5rem;
+        }
+
+        .image-container,
+        .content-container {
+          width: 50%;
+          height: 100%;
+        }
       }
     }
   }
@@ -183,18 +254,101 @@
       gap: 3rem;
 
       .card-zx9 {
+        flex-direction: row;
+        gap: 8.75rem;
         height: 35rem;
+
         .image-container {
-          .image-decoration {
-          }
-          .image-product {
-            width: 25.625rem;
-          }
+          width: 25.625rem;
+          margin-top: 10rem;
         }
       }
       .card-zx7 {
+        padding-left: 6rem;
       }
       .card-yx1 {
+        .content-container {
+          padding-left: 6rem;
+        }
+      }
+    }
+  }
+}
+
+.suggested-products-component {
+  > .container {
+    padding-inline: 1.5rem;
+    max-width: var(--max-card-width-40p);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > .title {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        flex-grow: 1;
+
+        .image-container {
+          width: 100%;
+          height: 7.5rem;
+          overflow: hidden;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: var(--clr-faded-background);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 42em) {
+  .suggested-products-component {
+    > .container {
+      padding-inline: 2.5rem;
+
+      > .title {
+        font-size: 2rem;
+      }
+
+      .content-container {
+        flex-direction: row;
+        gap: 0.75rem;
+
+        .card {
+          gap: 2rem;
+
+          .title {
+            font-size: 2rem;
+          }
+
+          .image-container {
+            height: 19.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 66em) {
+  .suggested-products-component {
+    > .container {
+      .content-container {
+        gap: 2rem;
       }
     }
   }

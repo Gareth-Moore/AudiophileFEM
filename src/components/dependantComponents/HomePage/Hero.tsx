@@ -23,12 +23,12 @@ const Hero = () => {
         <p className="new-product">NEW PRODUCT</p>
         <h1 className="title">
           XX99 Mark II <br />
-          HeadphoneS
+          HEADPHONES
         </h1>
         <p className="description">
           Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
         </p>
-        <Button buttonType="accent" innerText="SEE PRODUCT" isLink={true} url="/product" />
+        <Button buttonType="accent" innerText="SEE PRODUCT" isLink={true} url="/product" storeUpdate="xx99-mark-ii" />
       </div>
     </div>
   );

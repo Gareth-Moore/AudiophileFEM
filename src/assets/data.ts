@@ -131,10 +131,12 @@ interface ImageCategories {
   mobile: Images;
 }
 
+export type ProductNames = "xx59" | "xx99-mark-ii" | "xx99-mark-i" | "yx1" | "zx7" | "zx9";
+
 interface Product {
-  slug: string;
+  slug: ProductNames;
   name: string;
-  category: "HEADPHONES" | "SPEAKER" | "WIRELESS EARPHONES";
+  category: "HEADPHONES" | "SPEAKERS" | "EARPHONES";
   price: number;
   description: string;
   newProduct: boolean;
@@ -313,7 +315,7 @@ export const productsData: Product[] = [
   {
     slug: "yx1",
     name: "YX1",
-    category: "WIRELESS EARPHONES",
+    category: "EARPHONES",
     price: 599,
     description:
       "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
@@ -371,7 +373,7 @@ export const productsData: Product[] = [
   {
     slug: "zx7",
     name: "ZX7",
-    category: "SPEAKER",
+    category: "SPEAKERS",
     price: 3500,
     description:
       "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -429,7 +431,7 @@ export const productsData: Product[] = [
   {
     slug: "zx9",
     name: "ZX9",
-    category: "SPEAKER",
+    category: "SPEAKERS",
     price: 4500,
     description:
       "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",

@@ -29,6 +29,12 @@
   --max-card-width-48p: 75.375rem;
 }
 
+@media (min-width: 42em) {
+  .extra-padding-top {
+    padding-top: 3rem !important;
+  }
+}
+
 /* typography */
 html {
   font-family: "Manrope", sans-serif;
